@@ -18,6 +18,7 @@ body {
 	background-color: variables.$background-color;
 	font-family: "Work Sans", sans-serif;
 	height: 500vh;
+	@include colormode.color-scheme;
 }
 
 nav {
