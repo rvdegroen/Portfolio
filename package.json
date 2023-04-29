@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is Roshnie's portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvdegroen/Portfolio.git"
+  },
+  "author": "Roshnie de Groen",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rvdegroen/Portfolio/issues"
+  },
+  "homepage": "https://github.com/rvdegroen/Portfolio#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

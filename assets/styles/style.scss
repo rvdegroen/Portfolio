@@ -1,0 +1,80 @@
+@use "variables";
+@use "animations";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+// fonts
+// font-family: 'Lato', sans-serif;
+// font-family: 'Work Sans', sans-serif;
+
+body {
+	background-color: variables.$background-color;
+	font-family: "Work Sans", sans-serif;
+	height: 500vh;
+}
+
+nav {
+	display: flex;
+	background-color: variables.$nav-background-color;
+	padding: 1em 1.5em;
+	position: sticky;
+	top: 0;
+
+	a {
+		color: variables.$nav-links;
+		text-decoration: none;
+		transition: 0.2s ease-in-out;
+		position: relative;
+
+		&::after {
+			background-color: variables.$nav-links;
+			transition: all 0.2s ease-in-out;
+			content: "";
+			display: block;
+			position: absolute;
+			width: 0;
+			bottom: 0;
+			right: 0;
+			height: 0.14em;
+			margin: -0.4em 0;
+			border-radius: 25px;
+		}
+
+		&:hover {
+			color: variables.$nav-hover;
+			transition: all 0.2s ease-in-out;
+		}
+
+		&:hover::after {
+			background-color: variables.$nav-hover;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	.logo {
+		flex-grow: 1;
+
+		img {
+			height: 6vh;
+		}
+	}
+
+	.links {
+		display: flex;
+		gap: 1em;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-left: 1em;
+	}
+}
+
+.fade-in {
+	@include fade-in;
+}
