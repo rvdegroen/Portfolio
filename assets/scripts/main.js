@@ -13,12 +13,17 @@ window.addEventListener("hashchange", function () {
 window.addEventListener("scroll", function () {
 	const nav = document.querySelector("nav");
 	const scrollPosition = window.scrollY;
-	// remove later
-	if (scrollPosition > 100) {
-		console.log("nooo");
-		nav.classList.add("acrylic");
-	} else {
-		nav.classList.remove("acrylic");
-	}
-	// scrollPosition > 100 ? nav.classList.add("acrylic") : nav.classList.remove("acrylic");
+	// tenory operator:
+	scrollPosition > 100 ? nav.classList.add("acrylic") : nav.classList.remove("acrylic");
+	// if else:
+	// if (scrollPosition > 100) {
+	// 	console.log("nooo");
+	// 	nav.classList.add("acrylic");
+	// } else {
+	// 	nav.classList.remove("acrylic");
+	// }
 });
+
+function darkmode() {
+	const input = document.getElementById("darkmode");
+}
