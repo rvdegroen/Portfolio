@@ -26,4 +26,21 @@ window.addEventListener("scroll", function () {
 
 function darkmode() {
 	const input = document.getElementById("darkmode");
+	input.addEventListener("change", () => {
+		document.body.classList.toggle("dark-mode", input.checked);
+	});
 }
+
+function toggleDarkMode() {
+	const input = document.querySelector('input[type="checkbox"]');
+
+	input.addEventListener("change", () => {
+		if (input.checked) {
+			document.body.classList.add("dark-mode");
+		} else {
+			document.body.classList.remove("dark-mode");
+		}
+	});
+}
+
+window.addEventListener("load", toggleDarkMode);
