@@ -25,6 +25,13 @@ nav {
 	padding: 1em 1.5em;
 	position: sticky;
 	top: 0;
+	transition: 0.2s ease-in-out all;
+	border-bottom: 1em #50282f;
+
+	&.acrylic {
+		background-color: variables.$nav-acrylic;
+		backdrop-filter: blur(2em);
+	}
 
 	a {
 		color: variables.$nav-links;
@@ -75,6 +82,8 @@ nav {
 	}
 }
 
+// for the animations
 .fade-in {
-	@include fade-in;
+	// @include fade-in;
+	@include animations.fade-in;
 }

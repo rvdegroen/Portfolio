@@ -8,3 +8,17 @@ window.addEventListener("hashchange", function () {
 		document.querySelector(hash).scrollIntoView();
 	}
 });
+
+// add acrylic class to navbar once the user starts scrolling
+window.addEventListener("scroll", function () {
+	const nav = document.querySelector("nav");
+	const scrollPosition = window.scrollY;
+	// remove later
+	if (scrollPosition > 100) {
+		console.log("nooo");
+		nav.classList.add("acrylic");
+	} else {
+		nav.classList.remove("acrylic");
+	}
+	// scrollPosition > 100 ? nav.classList.add("acrylic") : nav.classList.remove("acrylic");
+});
