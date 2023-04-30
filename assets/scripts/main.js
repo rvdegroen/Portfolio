@@ -1,3 +1,10 @@
+// variables
+const checkbox = document.getElementById("darkmode");
+const body = document.body;
+
+// lightmode is default mode
+body.classList.add("lightmode");
+
 // Listen for the hashchange event
 window.addEventListener("hashchange", function () {
 	// Get the hash value from the URL
@@ -25,10 +32,6 @@ window.addEventListener("scroll", function () {
 });
 
 // darkmode and lightmode
-const checkbox = document.getElementById("darkmode");
-const body = document.body;
-body.classList.add("lightmode");
-
 checkbox.addEventListener("change", function () {
 	if (this.checked) {
 		body.classList.add("darkmode");
