@@ -24,23 +24,17 @@ window.addEventListener("scroll", function () {
 	// }
 });
 
-function darkmode() {
-	const input = document.getElementById("darkmode");
-	input.addEventListener("change", () => {
-		document.body.classList.toggle("dark-mode", input.checked);
-	});
-}
+// darkmode and lightmode
+const checkbox = document.getElementById("darkmode");
+const body = document.body;
+body.classList.add("lightmode");
 
-function toggleDarkMode() {
-	const input = document.querySelector('input[type="checkbox"]');
-
-	input.addEventListener("change", () => {
-		if (input.checked) {
-			document.body.classList.add("dark-mode");
-		} else {
-			document.body.classList.remove("dark-mode");
-		}
-	});
-}
-
-window.addEventListener("load", toggleDarkMode);
+checkbox.addEventListener("change", function () {
+	if (this.checked) {
+		body.classList.add("darkmode");
+		body.classList.remove("lightmode");
+	} else {
+		body.classList.remove("darkmode");
+		body.classList.add("lightmode");
+	}
+});

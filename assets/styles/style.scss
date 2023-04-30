@@ -1,6 +1,28 @@
 @use "variables";
 @use "animations";
-@use "colormode";
+.lightmode {
+	// custom variables light mode
+	--background-color: #f7edf0;
+	--nav-background-color: #50282f;
+	--nav-acrylic: #50282fe3;
+	--nav-links: #ffffff;
+	--nav-hover: #ff857e;
+	--text: #011627;
+	--text-highligts: #e63958;
+	--text-footer: #ffffff;
+}
+
+.darkmode {
+	// custom variables dark mode
+	--background-color: #191919 !important;
+	--nav-background-color: #42212b;
+	--nav-acrylic: #42212be3;
+	--nav-links: #ffffff;
+	--nav-hover: #f3607b;
+	--text: #ffffff;
+	--text-highligts: #f3607b;
+	--text-footer: #ffffff;
+}
 
 *,
 *::before,
@@ -15,20 +37,14 @@
 // font-family: 'Work Sans', sans-serif;
 
 body {
-	background-color: variables.$background-color;
+	background-color: var(--background-color);
 	font-family: "Work Sans", sans-serif;
 	height: 500vh;
-	@include colormode.color-scheme;
-}
-
-// toggle the dark mode styles on checkbox check
-input[type="checkbox"]:checked + body {
-	@include variables.dark-mode;
 }
 
 nav {
 	display: flex;
-	background-color: variables.$nav-background-color;
+	background-color: var(--nav-background-color);
 	padding: 1em 1.5em;
 	position: sticky;
 	top: 0;
@@ -36,18 +52,18 @@ nav {
 	border-bottom: 1em #50282f;
 
 	&.acrylic {
-		background-color: variables.$nav-acrylic;
+		background-color: var(--nav-acrylic);
 		backdrop-filter: blur(2em);
 	}
 
 	a {
-		color: variables.$nav-links;
+		color: var(--nav-links);
 		text-decoration: none;
 		transition: 0.2s ease-in-out;
 		position: relative;
 
 		&::after {
-			background-color: variables.$nav-links;
+			background-color: var(--nav-links);
 			transition: all 0.2s ease-in-out;
 			content: "";
 			display: block;
@@ -61,12 +77,12 @@ nav {
 		}
 
 		&:hover {
-			color: variables.$nav-hover;
+			color: var(--nav-hover);
 			transition: all 0.2s ease-in-out;
 		}
 
 		&:hover::after {
-			background-color: variables.$nav-hover;
+			background-color: var(--nav-hover);
 			left: 0;
 			width: 100%;
 		}
