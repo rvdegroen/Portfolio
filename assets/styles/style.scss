@@ -21,6 +21,11 @@ body {
 	@include colormode.color-scheme;
 }
 
+// toggle the dark mode styles on checkbox check
+input[type="checkbox"]:checked + body {
+	@include variables.dark-mode;
+}
+
 nav {
 	display: flex;
 	background-color: variables.$nav-background-color;
