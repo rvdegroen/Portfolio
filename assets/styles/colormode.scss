@@ -6,8 +6,11 @@
 	--nav-links: #ffffff;
 	--nav-hover: #ff857e;
 	--text: #011627;
-	--text-highligts: #e63958;
+	--text-highlight: #e63958;
 	--text-footer: #ffffff;
+	--colormode-border: #ffffff;
+	--colormode-within: #df6980;
+	--colormode-hover: #e798a7;
 }
 
 .darkmode {
@@ -18,6 +21,9 @@
 	--nav-links: #ffffff;
 	--nav-hover: #f3607b;
 	--text: #ffffff;
-	--text-highligts: #f3607b;
+	--text-highlight: #f3607b;
 	--text-footer: #ffffff;
+	--colormode-within: #ffffff;
+	--colormode-border: #df6980;
+	--colormode-hover: #e798a7;
 }
