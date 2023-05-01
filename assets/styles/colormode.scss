@@ -8,9 +8,11 @@
 	--text: #011627;
 	--text-highlight: #e63958;
 	--text-footer: #ffffff;
-	--colormode-border: #ffffff;
-	--colormode-within: #df6980;
+	--colormode-outer: #ffffff;
+	--colormode-inner: #df6980;
 	--colormode-hover: #e798a763;
+	--colormode-hover-inner: #ffa3b5;
+	--colormode-hover-outer: #ffffff;
 	--scroll: #df6980;
 }
 
@@ -24,8 +26,10 @@
 	--text: #ffffff;
 	--text-highlight: #f3607b;
 	--text-footer: #ffffff;
-	--colormode-within: #ffffff;
-	--colormode-border: #df6980;
+	--colormode-inner: #ffffff;
+	--colormode-outer: #df6980;
 	--colormode-hover: #e798a763;
+	--colormode-hover-outer: #ffa3b5;
+	--colormode-hover-inner: #ffffff;
 	--scroll: #df6980;
 }

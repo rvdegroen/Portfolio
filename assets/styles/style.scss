@@ -56,7 +56,7 @@ nav {
 		appearance: none;
 		width: 3em;
 		height: 3em;
-		background-color: var(--colormode-border);
+		background-color: var(--colormode-outer);
 		border-radius: 2em;
 		transition: ease-in-out all 0.2s;
 		cursor: pointer;
@@ -67,14 +67,21 @@ nav {
 			width: 1.1em;
 			height: 2.1em;
 			border-radius: 0 1em 1em 0;
-			background-color: var(--colormode-within);
+			background-color: var(--colormode-inner);
 			position: absolute;
 			top: 15%;
 			right: 15%;
+			transition: ease-in-out all 0.2s;
 		}
 
 		&:hover {
 			@include animations.pulsing;
+			background-color: var(--colormode-hover-outer);
+			transition: ease-in-out all 0.2s;
+
+			&::before {
+				background-color: var(--colormode-hover-inner);
+			}
 		}
 	}
 
@@ -121,7 +128,7 @@ nav {
 
 	.links {
 		display: flex;
-		gap: 1em;
+		gap: 2em;
 		align-items: center;
 		flex-wrap: wrap;
 		margin-left: 1em;
