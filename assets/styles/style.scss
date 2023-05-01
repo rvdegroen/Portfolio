@@ -1,6 +1,5 @@
-@use "variables";
 @use "animations";
-@import "colormode";
+@use "colormode";
 
 *,
 *::before,
@@ -31,6 +30,7 @@ nav {
 	transition: 0.2s ease-in-out all;
 	border-bottom: 1em #50282f;
 
+	// acrylic styling on scroll
 	&.acrylic {
 		background-color: var(--nav-acrylic);
 		backdrop-filter: blur(2em);
@@ -65,6 +65,48 @@ nav {
 			background-color: var(--nav-hover);
 			left: 0;
 			width: 100%;
+		}
+
+		input {
+			appearance: none;
+		}
+
+		// darkmode/lightmode button
+		#darkmode {
+			border-radius: 0.5em;
+			appearance: none;
+			background-color: var(--colormode-border);
+			cursor: pointer;
+			z-index: 1;
+			width: 3em;
+			height: 3em;
+			box-shadow: 0 0 0.2em #00000060;
+			position: absolute;
+			top: 2em;
+			right: 2em;
+
+			&::before {
+				width: 2.3em;
+				height: 2.3em;
+				border-radius: 4em;
+				content: "";
+				background: var(--colormode-within);
+				position: absolute;
+				left: 10%;
+				top: 10%;
+			}
+
+			&::after {
+				width: 0.7em;
+				height: 1.4em;
+				border-radius: 2em;
+				content: "";
+				background: black;
+				position: absolute;
+				border-radius: 0 1em 1em 0;
+				left: 50%;
+				top: 25%;
+			}
 		}
 	}
 
