@@ -45,6 +45,5 @@ window.onload = function () {
 	hamburger.addEventListener("click", function () {
 		hamburger.classList.toggle("is-active");
 		mobileMenu.classList.toggle("is-active");
-		body.style.overflowY = "hidden";
 	});
 };
