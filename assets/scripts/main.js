@@ -53,6 +53,4 @@ window.onload = function () {
 		hamburger.classList.toggle("is-active");
 		mobileMenu.classList.toggle("is-active");
 	});
-
-	html.style.overflowX = "hidden";
 };
