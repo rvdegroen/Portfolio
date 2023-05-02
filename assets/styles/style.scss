@@ -36,6 +36,8 @@ body {
 	font-family: "Work Sans", sans-serif;
 	color: var(--text);
 	transition: 0.2s ease-in-out all;
+	// overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 nav {
@@ -155,10 +157,6 @@ nav {
 
 // media queries
 @media (max-width: 768px) {
-	body {
-		overflow-x: hidden;
-	}
-
 	nav {
 		// darkmode button
 		input {
