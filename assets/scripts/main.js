@@ -14,8 +14,6 @@ window.addEventListener("hashchange", function () {
 		// scroll to the section with the matching ID
 		const target = document.querySelector(hash);
 		target.scrollIntoView();
-		// scroll up by 100 pixels
-		// window.scrollBy(0, -100);
 	}
 });
 
@@ -25,13 +23,6 @@ window.addEventListener("scroll", function () {
 	const scrollPosition = window.scrollY;
 	// tenory operator:
 	scrollPosition > 100 ? nav.classList.add("acrylic") : nav.classList.remove("acrylic");
-	// if else:
-	// if (scrollPosition > 100) {
-	// 	console.log("nooo");
-	// 	nav.classList.add("acrylic");
-	// } else {
-	// 	nav.classList.remove("acrylic");
-	// }
 });
 
 // darkmode and lightmode
