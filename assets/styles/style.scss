@@ -29,7 +29,6 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 100px;
 	@include animations.fade-in;
-	width: 100vw;
 }
 
 body {
@@ -212,10 +211,12 @@ nav {
 			padding-top: 14vh;
 			transition: all ease-in-out 0.4s;
 			z-index: 0;
+			overflow-x: hidden;
 
 			&.is-active {
 				left: 0;
 				bottom: 0;
+				overflow-x: hidden;
 			}
 
 			a {
