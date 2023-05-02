@@ -5,14 +5,17 @@ const body = document.body;
 // lightmode is default mode
 body.classList.add("lightmode");
 
-// Listen for the hashchange event
+// listen for the hashchange event
 window.addEventListener("hashchange", function () {
-	// Get the hash value from the URL
+	// get the hash value from the URL
 	const hash = window.location.hash;
-	// Check if the hash value corresponds to a section on the page
+	// check if the hash value corresponds to a section on the page
 	if (document.querySelector(hash)) {
-		// Scroll to the section with the matching ID
-		document.querySelector(hash).scrollIntoView();
+		// scroll to the section with the matching ID
+		const target = document.querySelector(hash);
+		target.scrollIntoView();
+		// scroll up by 100 pixels
+		// window.scrollBy(0, -100);
 	}
 });
 
