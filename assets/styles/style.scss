@@ -137,11 +137,13 @@ nav {
 }
 
 // stripes
-.stripe1 {
-	@include stylemixins.stripe1;
-	background-color: var(--stripe1);
-	margin-top: 200px;
-}
+// .stripes__container1 {
+// 	.stripe1 {
+// 		@include stylemixins.stripe1;
+// 		background-color: var(--stripe1);
+// 		margin-top: 200px;
+// 	}
+// }
 
 // for the animations
 .fade-in {
