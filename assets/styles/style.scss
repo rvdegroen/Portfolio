@@ -213,11 +213,13 @@ nav {
 			left: 100%;
 			top: 0;
 			right: 0;
+			bottom: 0;
 			width: 100%;
 			min-height: 100vh;
 			background-color: var(--nav-background-color);
 			padding-top: 14vh;
 			transition: all ease-in-out 0.4s;
+			overflow-y: hidden;
 
 			&.is-active {
 				left: 0;
