@@ -29,6 +29,7 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 100px;
 	@include animations.fade-in;
+	width: 100vw;
 }
 
 body {
