@@ -218,12 +218,12 @@ nav {
 			background-color: var(--nav-background-color);
 			padding-top: 14vh;
 			transition: all ease-in-out 0.4s;
-			overflow-y: hidden;
+			overflow: hidden;
 
 			&.is-active {
 				left: 0;
 				bottom: 0;
-				overflow-y: hidden;
+				overflow: hidden;
 			}
 
 			a {
