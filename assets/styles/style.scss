@@ -19,6 +19,7 @@ body {
 	font-family: "Work Sans", sans-serif;
 	color: var(--text);
 	transition: 0.2s ease-in-out all;
+	scroll-behavior: smooth;
 }
 
 // scrollbar
@@ -45,6 +46,11 @@ nav {
 	transition: 0.2s ease-in-out all;
 	border-bottom: 1em #50282f;
 	z-index: 10;
+	align-items: center;
+
+	.hamburger {
+		display: none;
+	}
 
 	// acrylic styling on scroll
 	&.acrylic {
@@ -62,6 +68,7 @@ nav {
 		transition: ease-in-out all 0.2s;
 		cursor: pointer;
 		position: relative;
+		margin-left: 2em;
 
 		&::before {
 			content: "";
@@ -127,7 +134,7 @@ nav {
 		}
 	}
 
-	.links {
+	.nav__links {
 		display: flex;
 		gap: 2em;
 		align-items: center;
@@ -150,3 +157,83 @@ nav {
 	// @include fade-in;
 	@include animations.fade-in;
 }
+
+// media queries
+@media (max-width: 768px) {
+	nav {
+		// darkmode button
+		input {
+			margin-right: 2em;
+		}
+
+		// src tutorial hamburger menu: https://www.youtube.com/watch?v=OFKBep95lb4
+		.hamburger {
+			position: relative;
+			display: block;
+			width: 2.5em;
+			height: 3em;
+			cursor: pointer;
+			background: none;
+			border: none;
+
+			.bar,
+			&::after,
+			&::before {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 2px;
+				background-color: var(--hamburger);
+				margin: 8px 0;
+				transition: 0.4s;
+			}
+
+			// on rotation, when .is-active is added as class
+			&.is-active::before {
+				transform: rotate(-45deg) translate(-9px, 6px);
+			}
+
+			&.is-active::after {
+				transform: rotate(45deg) translate(-8px, -5px);
+			}
+
+			&.is-active .bar {
+				opacity: 0;
+			}
+		}
+
+		.logo {
+			z-index: 1;
+		}
+
+		.nav__links {
+			display: block;
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 100%;
+			min-height: 100vh;
+			background-color: var(--nav-background-color);
+			padding-top: 14vh;
+			border-top: solid 5px var(--nav-dark-color);
+
+			a {
+				display: block;
+				text-align: center;
+				padding: 1em;
+				// background-color: var(--nav-hamburger-color);
+				padding: 1.5em;
+				margin: 1em 10vw;
+				border-bottom: 2px solid;
+
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+// media queries
+
+// max-widt 320

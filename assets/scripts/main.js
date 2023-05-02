@@ -41,3 +41,12 @@ checkbox.addEventListener("change", function () {
 		body.classList.add("lightmode");
 	}
 });
+
+// hamburger menu
+window.onload = function () {
+	const hamburger = document.querySelector(".hamburger");
+
+	hamburger.addEventListener("click", function () {
+		hamburger.classList.toggle("is-active");
+	});
+};

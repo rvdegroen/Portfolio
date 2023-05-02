@@ -2,6 +2,7 @@
 	// custom variables light mode
 	--background-color: #f7edf0;
 	--nav-background-color: #50282f;
+	--nav-dark-color: #3a1d22;
 	--nav-acrylic: #50282fea;
 	--nav-links: #ffffff;
 	--nav-hover: #ff857e;
@@ -14,18 +15,20 @@
 	--colormode-hover-inner: #ffa3b5;
 	--colormode-hover-outer: #ffffff;
 	--scroll: #df6980;
+	--hamburger: #ffffff;
 	--stripe1: #f4afab;
 	--stripe2: #ff857e;
-	--stripe3: #f4afab;
+	--stripe3: --stripe1;
 	--stripe4: --stripe2;
-	--stripe5: --stripe3;
-	--stripe6: --stripe3;
+	--stripe5: --stripe1;
+	--stripe6: --stripe1;
 }
 
 .darkmode {
 	// custom variables dark mode
 	--background-color: #1e1919;
 	--nav-background-color: #42212b;
+	--nav-dark-color: #2c151c;
 	--nav-acrylic: #42212bbb;
 	--nav-links: #ffffff;
 	--nav-hover: #f3607b;
@@ -38,4 +41,11 @@
 	--colormode-hover-outer: #ffa3b5;
 	--colormode-hover-inner: #ffffff;
 	--scroll: #df6980;
+	--hamburger: #ffffff;
+	--stripe1: #df6980;
+	--stripe2: #c04654;
+	--stripe3: --stripe1;
+	--stripe4: --stripe2;
+	--stripe5: ---stripe1;
+	--stripe6: --stripe1;
 }
