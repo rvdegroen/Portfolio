@@ -43,6 +43,7 @@ body {
 }
 
 nav {
+	z-index: 2;
 	display: flex;
 	background-color: var(--nav-background-color);
 	padding: 1em 2em;
@@ -50,7 +51,6 @@ nav {
 	top: 0;
 	transition: 0.2s ease-in-out all;
 	border-bottom: 1em #50282f;
-	z-index: 10;
 	align-items: center;
 
 	.hamburger {
@@ -210,6 +210,7 @@ nav {
 			background-color: var(--nav-background-color);
 			padding-top: 14vh;
 			transition: all ease-in-out 0.4s;
+			z-index: 0;
 
 			&.is-active {
 				left: 0;
