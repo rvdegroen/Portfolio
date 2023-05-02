@@ -2,30 +2,6 @@
 @use "colormode";
 @use "stylemixins";
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-html {
-	scroll-behavior: smooth;
-	scroll-padding-top: 100px;
-}
-
-// fonts
-// font-family: 'Lato', sans-serif;
-// font-family: 'Work Sans', sans-serif;
-
-body {
-	background-color: var(--background-color);
-	font-family: "Work Sans", sans-serif;
-	color: var(--text);
-	transition: 0.2s ease-in-out all;
-}
-
 // scrollbar
 ::-webkit-scrollbar {
 	width: 10px;
@@ -39,6 +15,27 @@ body {
 		background-color: var(--scroll);
 		border-radius: 1em;
 	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+	@include animations.fade-in;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: "Work Sans", sans-serif;
+	color: var(--text);
+	transition: 0.2s ease-in-out all;
 }
 
 nav {
@@ -156,14 +153,12 @@ nav {
 // 	}
 // }
 
-// for the animations
-.fade-in {
-	// @include fade-in;
-	@include animations.fade-in;
-}
-
 // media queries
 @media (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+
 	nav {
 		// darkmode button
 		input {
@@ -211,15 +206,22 @@ nav {
 		}
 
 		.nav__links {
+			margin: 0;
 			display: block;
 			position: fixed;
+			border: none;
+			left: 100%;
 			top: 0;
 			right: 0;
 			width: 100%;
 			min-height: 100vh;
 			background-color: var(--nav-background-color);
 			padding-top: 14vh;
-			border-top: solid 5px var(--nav-dark-color);
+			transition: all ease-in-out 0.4s;
+
+			&.is-active {
+				left: 0;
+			}
 
 			a {
 				display: block;
