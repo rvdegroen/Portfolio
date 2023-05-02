@@ -43,13 +43,16 @@ checkbox.addEventListener("change", function () {
 	}
 });
 
-// hamburger menu
 window.onload = function () {
 	const hamburger = document.querySelector(".hamburger");
 	const mobileMenu = document.querySelector(".nav__links");
+	const body = document.querySelector("body");
 
+	// hamburger menu
 	hamburger.addEventListener("click", function () {
 		hamburger.classList.toggle("is-active");
 		mobileMenu.classList.toggle("is-active");
 	});
+
+	body.style.overflowX = "hidden";
 };
