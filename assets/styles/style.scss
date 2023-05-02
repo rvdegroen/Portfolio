@@ -10,6 +10,11 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
 // fonts
 // font-family: 'Lato', sans-serif;
 // font-family: 'Work Sans', sans-serif;
@@ -19,7 +24,6 @@ body {
 	font-family: "Work Sans", sans-serif;
 	color: var(--text);
 	transition: 0.2s ease-in-out all;
-	scroll-behavior: smooth;
 }
 
 // scrollbar
