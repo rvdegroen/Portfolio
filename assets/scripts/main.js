@@ -46,7 +46,7 @@ checkbox.addEventListener("change", function () {
 window.onload = function () {
 	const hamburger = document.querySelector(".hamburger");
 	const mobileMenu = document.querySelector(".nav__links");
-	const body = document.querySelector("body");
+	const html = document.querySelector("html");
 
 	// hamburger menu
 	hamburger.addEventListener("click", function () {
@@ -54,5 +54,5 @@ window.onload = function () {
 		mobileMenu.classList.toggle("is-active");
 	});
 
-	body.style.overflowX = "hidden";
+	html.style.overflowX = "hidden";
 };
