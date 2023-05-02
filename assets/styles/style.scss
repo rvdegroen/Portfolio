@@ -148,15 +148,6 @@ nav {
 	}
 }
 
-// stripes
-// .stripes__container1 {
-// 	.stripe1 {
-// 		@include stylemixins.stripe1;
-// 		background-color: var(--stripe1);
-// 		margin-top: 200px;
-// 	}
-// }
-
 // media queries
 @media (max-width: 768px) {
 	nav {
@@ -165,7 +156,7 @@ nav {
 			margin-right: 2em;
 		}
 
-		// src tutorial hamburger menu: https://www.youtube.com/watch?v=OFKBep95lb4
+		// src tutorial hamburger menu icon: https://www.youtube.com/watch?v=OFKBep95lb4
 		.hamburger {
 			position: relative;
 			display: block;
@@ -205,6 +196,7 @@ nav {
 			z-index: 1;
 		}
 
+		// hamburger menu
 		.nav__links {
 			margin: 0;
 			display: block;
