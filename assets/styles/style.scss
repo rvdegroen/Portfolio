@@ -152,6 +152,8 @@ img {
 // media queries
 @media (max-width: 768px) {
 	nav {
+		position: relative;
+
 		.nav__links {
 			position: fixed;
 			bottom: 0;
