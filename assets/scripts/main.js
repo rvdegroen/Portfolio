@@ -15,13 +15,6 @@ window.addEventListener("hashchange", function () {
 		const target = document.querySelector(hash);
 		target.scrollIntoView();
 	}
-
-	// remove is-active class from all links
-	const hamburger = document.querySelector(".hamburger");
-	const mobileMenu = document.querySelector(".nav__links");
-
-	hamburger.classList.remove("is-active");
-	mobileMenu.classList.remove("is-active");
 });
 
 // add acrylic class to navbar once the user starts scrolling
