@@ -147,6 +147,20 @@ nav {
 
 // media queries
 @media (max-width: 768px) {
+	nav {
+		.nav__links {
+			position: fixed;
+			bottom: 0;
+			background-color: var(--nav-background-color);
+			left: 0;
+			right: 0;
+			margin: 0;
+			justify-content: center;
+			gap: 6vw;
+			flex-wrap: wrap;
+			padding: 1.5em 2em;
+		}
+	}
 }
 
 // media queries
