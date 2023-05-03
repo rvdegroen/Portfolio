@@ -145,6 +145,10 @@ nav {
 	}
 }
 
+img {
+	width: 3em;
+}
+
 // media queries
 @media (max-width: 768px) {
 	nav {
@@ -158,7 +162,7 @@ nav {
 			justify-content: center;
 			gap: 6vw;
 			flex-wrap: wrap;
-			padding: 1.5em 2em;
+			padding: 1.5em 1em;
 		}
 	}
 }
