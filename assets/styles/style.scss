@@ -167,6 +167,22 @@ img {
 	}
 }
 
+@media (max-width: 452px) {
+	nav {
+		.nav__links {
+			padding: 1.5em 0.5em;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	nav {
+		.nav__links {
+			padding: 1.5em 0.5em;
+		}
+	}
+}
+
 // media queries
 
 // max-widt 320
