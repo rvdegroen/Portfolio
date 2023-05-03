@@ -42,15 +42,3 @@ checkbox.addEventListener("change", function () {
 		body.classList.add("lightmode");
 	}
 });
-
-window.onload = function () {
-	const hamburger = document.querySelector(".hamburger");
-	const mobileMenu = document.querySelector(".nav__links");
-	const html = document.querySelector("html");
-
-	// hamburger menu
-	hamburger.addEventListener("click", function () {
-		hamburger.classList.toggle("is-active");
-		mobileMenu.classList.toggle("is-active");
-	});
-};
