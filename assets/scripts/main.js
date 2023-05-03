@@ -17,14 +17,6 @@ window.addEventListener("hashchange", function () {
 	}
 });
 
-// add acrylic class to navbar once the user starts scrolling
-window.addEventListener("scroll", function () {
-	const nav = document.querySelector("nav");
-	const scrollPosition = window.scrollY;
-	// tenory operator:
-	scrollPosition > 100 ? nav.classList.add("acrylic") : nav.classList.remove("acrylic");
-});
-
 // darkmode and lightmode
 checkbox.addEventListener("change", function () {
 	if (this.checked) {
