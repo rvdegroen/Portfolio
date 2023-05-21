@@ -188,7 +188,7 @@ main {
 
 	.stripes__container2 {
 		margin-top: 60px;
-		margin-bottom: 115px;
+		margin-bottom: 120px;
 
 		.stripe4 {
 			position: absolute;
@@ -212,7 +212,7 @@ main {
 			margin-top: 50px;
 			right: 0;
 			width: 80vw;
-			height: 5px;
+			height: 10px;
 			background-color: var(--stripe6);
 		}
 	}
@@ -246,9 +246,9 @@ main {
 				content: '';
 				position: absolute;
 				width: 450px;
-				height: 155px;
+				height: 154px;
 				right: 0;
-				top: 310px;
+				top: 312px;
 				background-color: var(--deco-color1);
 				z-index: -1;
 				overflow: hidden;
