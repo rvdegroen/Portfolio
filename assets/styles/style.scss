@@ -145,97 +145,121 @@ nav {
 }
 
 main {
-	// about page
-	#about {
-		padding-top: 100px;
-
-		// stripes
-		.stripes__container1 {
-			margin-bottom: 30px;
-
-			.stripe1 {
-				position: absolute;
-				right: 0;
-				width: 80vw;
-				height: 10px;
-				background-color: var(--stripe1);
-			}
-
-			.stripe2 {
-				position: absolute;
-				margin-top: 25px;
-				right: 0;
-				width: 60vw;
-				height: 5px;
-				background-color: var(--stripe2);
-			}
-
-			.stripe3 {
-				position: absolute;
-				margin-top: 50px;
-				right: 0;
-				width: 50vw;
-				height: 4px;
-				background-color: var(--stripe3);
-			}
-		}
-
-		// header with h1 and img
-		header {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-
-			.roshnie__image {
-				position: relative;
-				display: block;
-				max-width: 100%;
-				height: auto;
-				transform: translateX(3em);
-				z-index: 1;
-			}
-
-			h1 {
-				// position: absolute;
-				background-color: var(--deco-color1);
-				z-index: 1;
-				font-weight: 400;
-				font-size: 2.2em;
-				padding: 1em 1em 1em 3em;
-				z-index: -1;
-				overflow: hidden;
-
-				&::after {
-					content: '';
-					position: absolute;
-					width: 450px;
-					height: 154px;
-					right: 0;
-					top: 312px;
-					background-color: var(--deco-color1);
-					z-index: -1;
-					overflow: hidden;
-				}
-			}
-		}
-
-		// about me section
-		section {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 2em;
-			text-align: center;
-			width: 400px;
-			margin: 0 auto;
-			// padding: 0 50em 0 50em;
-			font-size: 1.2em;
-		}
-	}
-
 	// hightlight span colors for in p's
 	.highlight {
 		color: var(--text-highlight);
+	}
+}
+
+// about page
+#about {
+	padding-top: 100px;
+
+	// stripes
+	.stripes__container1 {
+		margin-bottom: 30px;
+
+		.stripe1 {
+			position: absolute;
+			right: 0;
+			width: 80vw;
+			height: 10px;
+			background-color: var(--stripe1);
+		}
+
+		.stripe2 {
+			position: absolute;
+			margin-top: 25px;
+			right: 0;
+			width: 60vw;
+			height: 5px;
+			background-color: var(--stripe2);
+		}
+
+		.stripe3 {
+			position: absolute;
+			margin-top: 50px;
+			right: 0;
+			width: 50vw;
+			height: 4px;
+			background-color: var(--stripe3);
+		}
+	}
+
+	// header with h1 and img
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.roshnie__image {
+			position: relative;
+			display: block;
+			max-width: 100%;
+			height: auto;
+			transform: translateX(3em);
+			z-index: 1;
+		}
+
+		h1 {
+			// position: absolute;
+			background-color: var(--deco-color1);
+			z-index: 1;
+			font-weight: 400;
+			font-size: 2.2em;
+			padding: 1em 1em 1em 3em;
+			z-index: -1;
+			overflow: hidden;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 450px;
+				height: 155px;
+				right: 0;
+				top: 310px;
+				background-color: var(--deco-color1);
+				z-index: -1;
+				overflow: hidden;
+			}
+		}
+	}
+
+	// about me section
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2em;
+		text-align: center;
+		width: 400px;
+		margin: 0 auto;
+		// padding: 0 50em 0 50em;
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 2975px) {
+	#about {
+		header {
+			h1 {
+				&::after {
+					width: 1500px !important;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	#about {
+		header {
+			h1 {
+				&::after {
+					width: 1000px;
+				}
+			}
+		}
 	}
 }
 
