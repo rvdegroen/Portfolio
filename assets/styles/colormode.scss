@@ -17,10 +17,10 @@
 	--hamburger: #ffffff;
 	--stripe1: #f4afab;
 	--stripe2: #ff857e;
-	--stripe3: --stripe1;
-	--stripe4: --stripe2;
-	--stripe5: --stripe1;
-	--stripe6: --stripe1;
+	--stripe3: var(--stripe1);
+	--stripe4: var(--stripe2);
+	--stripe5: var(--stripe1);
+	--stripe6: var(--stripe1);
 	--deco-color1: #f9d7d3;
 }
 
@@ -43,9 +43,9 @@
 	--hamburger: #ffffff;
 	--stripe1: #df6980;
 	--stripe2: #c04654;
-	--stripe3: --stripe1;
-	--stripe4: --stripe2;
-	--stripe5: ---stripe1;
-	--stripe6: --stripe1;
+	--stripe3: var(--stripe1);
+	--stripe4: var(--stripe2);
+	--stripe5: var(---stripe1);
+	--stripe6: var(--stripe1);
 	--deco-color1: #30292a;
 }
