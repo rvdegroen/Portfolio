@@ -245,7 +245,11 @@ main {
 		padding-bottom: 0px !important;
 
 		section {
-			gap: 1em !important;
+			gap: 1.3em !important;
+
+			p {
+				font-size: 1.1em;
+			}
 		}
 	}
 
