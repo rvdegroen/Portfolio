@@ -226,9 +226,10 @@ main {
 			align-items: center;
 			gap: 2em;
 			text-align: center;
-			width: 340px;
+			width: 400px;
 			margin: 0 auto;
 			// padding: 0 50em 0 50em;
+			font-size: 1.2em;
 		}
 	}
 
@@ -240,19 +241,6 @@ main {
 
 // media queries
 @media (max-width: 1004px) {
-	#about {
-		padding-top: 0px !important;
-		padding-bottom: 0px !important;
-
-		section {
-			gap: 1.3em !important;
-
-			p {
-				font-size: 1.1em;
-			}
-		}
-	}
-
 	header {
 		display: flex;
 		flex-direction: column;
@@ -268,12 +256,27 @@ main {
 		h1 {
 			// position: absolute;
 			background: none !important;
-			padding: 1em 0 1em 0 !important;
-			margin: 0 0.5em;
+			padding: 1em 0.3em 1em 0.3em !important;
 			font-size: 1.5em !important;
+			width: 350px !important;
+			display: flex;
+			flex-wrap: wrap;
 
 			&::after {
 				background: none !important;
+			}
+		}
+	}
+
+	#about {
+		padding: 0 !important;
+
+		section {
+			gap: 1.3em !important;
+			width: 320px !important;
+
+			p {
+				font-size: 1.1em;
 			}
 		}
 	}
