@@ -13,7 +13,7 @@
 	--colormode-hover: #e798a763;
 	--colormode-hover-inner: #ffa3b5;
 	--colormode-hover-outer: #ffffff;
-	--scroll: #df6980;
+	--scroll: #e6395981;
 	--hamburger: #ffffff;
 	--stripe1: #f4afab;
 	--stripe2: #ff857e;
@@ -21,6 +21,7 @@
 	--stripe4: --stripe2;
 	--stripe5: --stripe1;
 	--stripe6: --stripe1;
+	--deco-color1: #f9d7d3;
 }
 
 .darkmode {
@@ -38,7 +39,7 @@
 	--colormode-hover: #e798a763;
 	--colormode-hover-outer: #ffa3b5;
 	--colormode-hover-inner: #ffffff;
-	--scroll: #df6980;
+	--scroll: #e6395981;
 	--hamburger: #ffffff;
 	--stripe1: #df6980;
 	--stripe2: #c04654;
@@ -46,4 +47,5 @@
 	--stripe4: --stripe2;
 	--stripe5: ---stripe1;
 	--stripe6: --stripe1;
+	--deco-color1: #30292a;
 }

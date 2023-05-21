@@ -1,6 +1,6 @@
-@use "animations";
-@use "colormode";
-@use "stylemixins";
+@use 'animations';
+@use 'colormode';
+@use 'stylemixins';
 
 // scrollbar
 ::-webkit-scrollbar {
@@ -33,7 +33,7 @@ html {
 
 body {
 	background-color: var(--background-color);
-	font-family: "Work Sans", sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	color: var(--text);
 	transition: 0.2s ease-in-out all;
 	width: 100vw;
@@ -73,7 +73,7 @@ nav {
 		margin-left: 2em;
 
 		&::before {
-			content: "";
+			content: '';
 			width: 1.1em;
 			height: 2.1em;
 			border-radius: 0 1em 1em 0;
@@ -105,7 +105,7 @@ nav {
 		&::after {
 			background-color: var(--nav-links);
 			transition: all 0.2s ease-in-out;
-			content: "";
+			content: '';
 			display: block;
 			position: absolute;
 			width: 0;
@@ -145,10 +145,6 @@ nav {
 	}
 }
 
-img {
-	width: 3em;
-}
-
 // media queries
 @media (max-width: 768px) {
 	nav {
@@ -184,7 +180,3 @@ img {
 		}
 	}
 }
-
-// media queries
-
-// max-widt 320
