@@ -186,6 +186,37 @@ main {
 		}
 	}
 
+	.stripes__container2 {
+		margin-top: 60px;
+		margin-bottom: 75px;
+
+		.stripe4 {
+			position: absolute;
+			right: 0;
+			width: 50vw;
+			height: 4px;
+			background-color: var(--stripe4);
+		}
+
+		.stripe5 {
+			position: absolute;
+			margin-top: 25px;
+			right: 0;
+			width: 60vw;
+			height: 5px;
+			background-color: var(--stripe5);
+		}
+
+		.stripe6 {
+			position: absolute;
+			margin-top: 50px;
+			right: 0;
+			width: 80vw;
+			height: 5px;
+			background-color: var(--stripe6);
+		}
+	}
+
 	// header with h1 and img
 	header {
 		display: flex;
@@ -298,10 +329,6 @@ main {
 		section {
 			gap: 1.3em !important;
 			width: 320px !important;
-
-			p {
-				font-size: 1.1em;
-			}
 		}
 	}
 
