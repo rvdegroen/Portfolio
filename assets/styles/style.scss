@@ -230,7 +230,7 @@ main {
 	header {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: end;
 
 		.roshnie__image {
 			position: relative;
@@ -250,18 +250,19 @@ main {
 			padding: 1em 1em 1em 3em;
 			z-index: -1;
 			overflow: hidden;
+			padding-right: 33vw;
 
-			&::after {
-				content: '';
-				position: absolute;
-				width: 450px;
-				height: 154px;
-				right: 0;
-				top: 312px;
-				background-color: var(--deco-color1);
-				z-index: -1;
-				overflow: hidden;
-			}
+			// &::after {
+			// 	content: '';
+			// 	position: absolute;
+			// 	width: 450px;
+			// 	height: 154px;
+			// 	right: 0;
+			// 	top: 312px;
+			// 	background-color: var(--deco-color1);
+			// 	z-index: -1;
+			// 	overflow: hidden;
+			// }
 		}
 	}
 
@@ -550,6 +551,7 @@ footer {
 	}
 }
 
+// media queries
 @media (min-width: 2975px) {
 	#about {
 		header {
@@ -582,7 +584,6 @@ footer {
 	}
 }
 
-// media queries
 @media (max-width: 1004px) {
 	.phonehidden {
 		display: none;
