@@ -652,11 +652,25 @@ footer {
 
 			a {
 				background-color: var(--text);
-				padding: 0.5em 1em;
+				padding: 0.7em 1em;
 				border-radius: 0.3em;
 				color: var(--button-color) !important;
 				font-weight: 400 !important;
 				line-height: 1em;
+				margin: 0 0 1em 0;
+
+				&::after {
+					display: none;
+				}
+
+				&:hover {
+					background-color: var(--button-color);
+					color: var(--text) !important;
+				}
+
+				&:hover::after {
+					display: none;
+				}
 			}
 
 			.phonehidden {
