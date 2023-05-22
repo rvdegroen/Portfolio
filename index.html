@@ -72,12 +72,13 @@
 					<h2>Portfolio</h2>
 
 					<!-- project 1 -->
-					<article>
+					<article class="work background_one">
 						<div>
 							<h3>A very long title for a specific design</h3>
 							<p>A very long and descriptive sort of explanation of the given work for whatever</p>
 							<ul>
 								<li>Node.js</li>
+								<li>&#124</li>
 								<li>MongoDB</li>
 							</ul>
 							<a href="#">More about this project →</a>
@@ -88,13 +89,14 @@
 					</article>
 
 					<!-- project 2 -->
-					<article>
+					<article class="work background_two">
 						<div>
 							<h3>A very long title for a specific design</h3>
 							<p>A very long and descriptive sort of explanation of the given work for whatever</p>
 							<ul>
 								<li>Node.js</li>
-								<li>MongoDB</li>
+								<li>&#124</li>
+								<li> MongoDB</li>
 							</ul>
 							<a href="#">More about this project →</a>
 						</div>
@@ -112,10 +114,10 @@
 
 			<div id="my-skills">
 				<section>
-					<h3>My Skills</h3>
+					<h2>My Skills</h2>
 
-					<section>
-						<h4>Design</h4>
+					<section class="skills">
+						<h3>Design</h3>
 						<ul>
 							<li>Figma</li>
 							<li>Adobe CC</li>
@@ -126,8 +128,8 @@
 						</ul>
 					</section>
 
-					<section>
-						<h4>Programming Languages</h4>
+					<section class="skills">
+						<h3>Programming Languages</h3>
 						<ul>
 							<li>HTML</li>
 							<li>CSS</li>
@@ -135,8 +137,8 @@
 						</ul>
 					</section>
 
-					<section>
-						<h4>Libraries & Frameworks</h4>
+					<section class="skills">
+						<h3>Libraries & Frameworks</h3>
 						<ul>
 							<li>Express.js</li>
 							<li>EJS</li>
@@ -144,8 +146,8 @@
 						</ul>
 					</section>
 
-					<section>
-						<h4>Tools & Platforms</h4>
+					<section class="skills">
+						<h3>Tools & Platforms</h3>
 						<ul>
 							<li>Linux</li>
 							<li>Git</li>
@@ -157,8 +159,8 @@
 						</ul>
 					</section>
 
-					<section>
-						<h4>Databases</h4>
+					<section class="skills">
+						<h3>Databases</h3>
 						<ul>
 							<li>MongoDB</li>
 						</ul>
@@ -178,34 +180,33 @@
 					<tr>
 						<td><img src="./assets/icons/mail.svg" alt="mail icon" /></td>
 						<td>Email</td>
-						<td><a href="mailto:rvdegroen@gmail.com">rvdegroen@gmail.com</a></td>
+						<td><a href="mailto:rvdegroen@gmail.com" class="contact_text">rvdegroen@gmail.com →</a></td>
 					</tr>
-				</table>
-				<table>
 					<tr>
 						<td><img src="./assets/icons/github.svg" alt="github icon" /></td>
 						<td>Github</td>
-						<td><a href="https://github.com/rvdegroen">@rvdegroen</a></td>
+						<td class="contact_text"><a href="https://github.com/rvdegroen">@rvdegroen →</a></td>
 					</tr>
 				</table>
+				
 			</div>
 		</main>
 
 		<footer>
-			<div>
-				<div><img src="./assets/images/logo.svg" alt="Roshnie's logo" /></div>
-				<table>
-					<tr>
-						<td><img src="./assets/icons/mail.svg" alt="mail icon" /></td>
-						<td><a href="mailto:rvdegroen@gmail.com">rvdegroen@gmail.com</a></td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td><img src="./assets/icons/github.svg" alt="github icon" /></td>
-						<td><a href="https://github.com/rvdegroen">@rvdegroen</a></td>
-					</tr>
-				</table>
+			<div class="footer_div">
+				
+					<img src="./assets/images/logo.svg" alt="Roshnie's logo" class="logo"/>
+				
+					<table>
+						<tr>
+							<td><img src="./assets/icons/mail.svg" alt="mail icon" /></td>
+							<td class="contact_text"><a href="mailto:rvdegroen@gmail.com" >rvdegroen@gmail.com →</a></td>
+						</tr>
+						<tr>
+							<td><img src="./assets/icons/github.svg" alt="github icon" /></td>
+							<td class="contact_text"><a href="https://github.com/rvdegroen">@rvdegroen →</a></td>
+						</tr>
+					</table>
 			</div>
 			<p>© 2022 Roshnie de Groen</p>
 		</footer>

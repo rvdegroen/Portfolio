@@ -22,6 +22,12 @@
 	--stripe5: var(--stripe1);
 	--stripe6: var(--stripe1);
 	--deco-color1: #f9d7d3;
+	--work-color: #f4cbc6;
+	--tools-color: #011627a9;
+	--link-color: #011627;
+	--skills-color: #ff857e;
+	--filter: brightness(0);
+	--text-light: #ffffff;
 }
 
 .darkmode {
@@ -48,4 +54,9 @@
 	--stripe5: var(---stripe1);
 	--stripe6: var(--stripe1);
 	--deco-color1: #30292a;
+	--work-color: #342729;
+	--tools-color: #edededa1;
+	--link-color: #ffffff;
+	--skills-color: #c04654;
+	--filter: brightness(1);
 }
