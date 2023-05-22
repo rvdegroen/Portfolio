@@ -503,6 +503,8 @@ footer {
 	.footer_div {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		// max-width: 30vw;
+		// margin: 0 auto;
 	}
 
 	table {
