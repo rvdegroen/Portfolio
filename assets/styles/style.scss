@@ -41,6 +41,10 @@ body {
 	li {
 		list-style: none;
 	}
+
+	#desktophidden {
+		display: none;
+	}
 }
 
 nav {
@@ -482,14 +486,18 @@ footer {
 		justify-content: end;
 	}
 
+	.contact_text {
+		text-align: right;
+	}
+
 	a {
-		font-weight: 700;
 		color: var(--text-light);
 		text-decoration: none;
 		transition: ease-in-out 0.2s;
 		padding-bottom: 0.1em;
 		position: relative;
 		text-align: right;
+		// right: 0;
 
 		&::after {
 			background-color: var(--nav-links);
@@ -554,6 +562,10 @@ footer {
 @media (max-width: 1004px) {
 	.phonehidden {
 		display: none;
+	}
+
+	#desktophidden {
+		display: inline !important;
 	}
 
 	.stripes__container1 {
@@ -653,6 +665,10 @@ footer {
 	#contact {
 		margin: 0 2em;
 		text-align: center;
+
+		img {
+			max-width: 36px;
+		}
 	}
 
 	footer {
@@ -699,12 +715,64 @@ footer {
 			padding: 1.5em 0.5em;
 		}
 	}
+
+	section {
+		font-size: 1em !important;
+	}
+
+	#portfolio {
+		.work {
+			img {
+				max-width: 100vw !important;
+			}
+		}
+	}
+
+	#my-skills {
+		.skills {
+			ul {
+				gap: 0.7em;
+				margin-bottom: 1.5em;
+			}
+
+			li {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	header {
+		overflow: hidden;
+	}
 }
 
 @media (max-width: 320px) {
 	nav {
 		.nav__links {
 			padding: 1.5em 0.5em;
+		}
+	}
+
+	header {
+		overflow: hidden;
+		h1 {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0;
+			max-width: 320px;
+			text-align: center;
+		}
+
+		.roshnie__image {
+			display: inline;
+		}
+	}
+
+	#about {
+		h1 {
+			margin: 0 1em;
 		}
 	}
 }
