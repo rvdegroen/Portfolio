@@ -6,12 +6,6 @@ const body = document.body;
 const gridImages = document.querySelectorAll('.grid_image');
 const dialog = document.getElementById('dialog');
 const dialogImage = document.getElementById('dialog_image');
-const dialogImageDesktop = document.querySelector('.dialog img');
-
-// Check if the image width is wider than 700 pixels
-// if (image.width > 700) {
-// 	image.style.maxWidth = '70%';
-// }
 
 // DEFAULT MODES
 body.classList.add('lightmode');
@@ -45,13 +39,6 @@ gridImages.forEach((image) => {
 		const src = this.getAttribute('src');
 		openDialog(src);
 	});
-});
-
-// attach click event listener to the dialog to close it when clicked outside
-dialog.addEventListener('click', function (event) {
-	if (event.target === this) {
-		closeDialog();
-	}
 });
 
 // attach esc event listener to the document
@@ -100,5 +87,12 @@ checkbox.addEventListener('change', function () {
 	} else {
 		body.classList.remove('darkmode');
 		body.classList.add('lightmode');
+	}
+});
+
+// attach click event listener to the dialog to close it when clicked outside
+dialog.addEventListener('click', function (event) {
+	if (event.target === this) {
+		closeDialog();
 	}
 });
