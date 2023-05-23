@@ -667,6 +667,21 @@ footer {
 	}
 }
 
+// arrow up
+.arrow_up {
+	text-align: center;
+	background-color: var(--nav-background-color);
+	display: grid;
+	place-content: center;
+	place-items: center;
+	width: 3.5em;
+	height: 3.5em;
+	border-radius: 2em;
+	position: fixed;
+	bottom: 5em;
+	right: 1em;
+}
+
 // media queries
 // @media (min-width: 2550px) {
 // 	h1 {
