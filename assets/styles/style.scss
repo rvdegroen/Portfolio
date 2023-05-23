@@ -636,6 +636,7 @@ footer {
 
 	// back button
 	.back_button {
+		margin-bottom: 1.5em;
 		font-size: 1.3em;
 		background: none;
 		border: none;
@@ -701,6 +702,7 @@ footer {
 
 	padding: 7em 0 7em 0;
 	z-index: 9999;
+	backdrop-filter: blur(1em);
 
 	img {
 		max-width: 80%;
@@ -983,6 +985,10 @@ footer {
 		}
 	}
 
+	.back_button {
+		right: 37vw;
+	}
+
 	nav {
 		position: relative;
 
@@ -1007,6 +1013,10 @@ footer {
 }
 
 @media (max-width: 452px) {
+	.back_button {
+		right: 30vw;
+	}
+
 	nav {
 		.nav__links {
 			padding: 1.5em 0.5em;
