@@ -6,6 +6,12 @@ const body = document.body;
 const gridImages = document.querySelectorAll('.grid_image');
 const dialog = document.getElementById('dialog');
 const dialogImage = document.getElementById('dialog_image');
+const dialogImageDesktop = document.querySelector('.dialog img');
+
+// Check if the image width is wider than 700 pixels
+// if (image.width > 700) {
+// 	image.style.maxWidth = '70%';
+// }
 
 // DEFAULT MODES
 body.classList.add('lightmode');
