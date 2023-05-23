@@ -66,18 +66,18 @@ window.addEventListener('hashchange', function () {
 });
 
 // resize img
-window.addEventListener('load', function () {
-	const imgGrid = document.querySelector('.image_grid');
-	var images = imageContainer.querySelectorAll('.grid_image');
+// window.addEventListener('load', function () {
+// 	const imgGrid = document.querySelector('.image_grid');
+// 	var images = imageContainer.querySelectorAll('.grid_image');
 
-	for (let i = 0; i < images.length; i++) {
-		let image = images[i];
+// 	for (let i = 0; i < images.length; i++) {
+// 		let image = images[i];
 
-		if (image.naturalWidth > imageContainer.offsetWidth) {
-			image.style.width = '100%';
-		}
-	}
-});
+// 		if (image.naturalWidth > imageContainer.offsetWidth) {
+// 			image.style.width = '100%';
+// 		}
+// 	}
+// });
 
 // darkmode and lightmode
 checkbox.addEventListener('change', function () {
