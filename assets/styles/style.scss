@@ -301,7 +301,7 @@ main {
 			place-items: center;
 			width: 100%;
 			padding: 2.5em 25em;
-
+			gap: 1.5em;
 			// heading & descr
 
 			h3 {
@@ -552,6 +552,81 @@ footer {
 	}
 }
 
+// work pages
+.work_main {
+	background-color: var(--background-color);
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-bottom: 100px;
+	margin-top: 70px;
+
+	.metadata {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		h1 {
+			margin-bottom: 0.5em;
+		}
+
+		p {
+			margin-bottom: 2em;
+			max-width: 35vw;
+		}
+	}
+
+	.image_grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-height: 400px;
+			width: auto;
+		}
+	}
+
+	// back button
+	.back_button {
+		font-size: 1.3em;
+		background: none;
+		border: none;
+		cursor: pointer;
+		font-weight: 700;
+		color: var(--text);
+		position: relative;
+		transition: ease-in-out 0.2s;
+
+		&::after {
+			background-color: var(--text);
+			transition: all 0.2s ease-in-out;
+			content: '';
+			display: block;
+			position: absolute;
+			width: 0;
+			bottom: 0;
+			right: 0;
+			height: 0.14em;
+			margin: -0.4em 0;
+			border-radius: 25px;
+		}
+
+		&:hover {
+			color: var(--text-highlight);
+			transition: all 0.2s ease-in-out;
+		}
+
+		&:hover::after {
+			background-color: var(--text-highlight);
+			left: 0;
+			width: 100%;
+		}
+	}
+}
+
 // media queries
 // @media (min-width: 2550px) {
 // 	h1 {
@@ -569,49 +644,82 @@ footer {
 	#portfolio {
 		.work {
 			padding: 2em 0 !important;
+
+			img {
+				max-width: 459px;
+				max-height: 463px;
+			}
 		}
 	}
 }
 
 @media (max-width: 1446px) {
-	h1 {
-		padding-right: 22vw !important;
+	header {
+		h1 {
+			padding-right: 22vw !important;
+		}
 	}
 }
 
 @media (max-width: 1441px) {
-	h1 {
-		padding-right: 20vw !important;
+	header {
+		h1 {
+			padding-right: 20vw !important;
+		}
+	}
+
+	.work_main {
+		margin: 2em;
 	}
 }
 
 @media (max-width: 1210px) {
-	h1 {
-		padding-right: 16vw !important;
+	header {
+		h1 {
+			padding-right: 16vw !important;
+		}
 	}
 }
 
 @media (max-width: 1152px) {
-	h1 {
-		padding-right: 12vw !important;
+	header {
+		h1 {
+			padding-right: 12vw !important;
+		}
+	}
+
+	.work_main {
+		p {
+			max-width: 90vw !important;
+		}
+
+		img {
+			max-width: 100%;
+		}
 	}
 }
 
 @media (max-width: 1100px) {
-	h1 {
-		padding-right: 10vw !important;
+	header {
+		h1 {
+			padding-right: 10vw !important;
+		}
 	}
 }
 
 @media (max-width: 1075px) {
-	h1 {
-		padding-right: 6vw !important;
+	header {
+		h1 {
+			padding-right: 6vw !important;
+		}
 	}
 }
 
 @media (max-width: 1029px) {
-	h1 {
-		padding-right: 3vw !important;
+	header {
+		h1 {
+			padding-right: 3vw !important;
+		}
 	}
 }
 
@@ -815,6 +923,11 @@ footer {
 
 	#contact {
 		font-size: 1em !important;
+	}
+
+	// works page
+	.work_main {
+		margin: 2em 1em !important;
 	}
 }
 

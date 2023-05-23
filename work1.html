@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Roshnie's Portfolio</title>
+	</head>
+	<body>
+		<nav class="fade-in">
+			<div class="logo">
+				<img src="./assets/images/logo.svg" alt="Roshnie's logo" />
+			</div>
+			<div class="nav__links">
+				<a href="#about">About</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#my-skills">My Skills</a>
+				<a href="#contact">Contact</a>
+			</div>
+			<input type="checkbox" id="darkmode" />
+		</nav>
+
+		<main class="work_main">
+			<button onclick="goBack()" class="back_button">← Go Back</button>
+			<div class="metadata">
+				<h1>Some title</h1>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+					a galley of type and scrambled it to make a type specimen book. It has survived not only
+					five centuries, but also the leap into electronic typesetting, remaining essentially
+					unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+					Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+					PageMaker including versions of Lorem Ipsum.
+				</p>
+			</div>
+
+			<!-- classes:"img_full, img_half" -->
+			<div class="image_grid">
+				<img class="grid_image" src="https://placehold.co/600x400" alt="" />
+				<img class="grid_image" src="https://placehold.co/600x400" alt="" />
+				<img class="grid_image" src="https://placehold.co/600x400" alt="" />
+				<img class="grid_image" src="https://placehold.co/200x500" alt="" />
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer_div">
+				<img src="./assets/images/logo.svg" alt="Roshnie's logo" class="logo" />
+
+				<table class="phonehidden">
+					<tr>
+						<td><img src="./assets/icons/mail.svg" alt="mail icon" /></td>
+						<td class="contact_text">
+							<a href="mailto:rvdegroen@gmail.com">rvdegroen@gmail.com →</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./assets/icons/github.svg" alt="github icon" /></td>
+						<td class="contact_text"><a href="https://github.com/rvdegroen">@rvdegroen →</a></td>
+					</tr>
+				</table>
+			</div>
+			<p>© 2023 Roshnie de Groen</p>
+		</footer>
+
+		<script src="./assets/scripts/main.js"></script>
+	</body>
+</html>
