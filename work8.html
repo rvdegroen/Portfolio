@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Roshnie's Portfolio</title>
+	</head>
+	<body>
+		<nav class="fade-in">
+			<div class="logo">
+				<img src="./assets/images/logo.svg" alt="Roshnie's logo" />
+			</div>
+			<div class="nav__links">
+				<a href="./index.html#about">About</a>
+				<a href="./index.html#portfolio">Portfolio</a>
+				<a href="./index.html#my-skills">My Skills</a>
+				<a href="./index.html#contact">Contact</a>
+			</div>
+			<input type="checkbox" id="darkmode" />
+		</nav>
+
+		<a href="#" class="arrow_up"><img src="./assets/icons/arrow-up.svg" alt="go back up" /></a>
+
+		<main class="work_main">
+			<button onclick="goBack()" class="back_button">← Go Back</button>
+			<div class="metadata">
+				<h1>Some title</h1>
+				<p>
+					Conceptually, this was supposed to be a phone app where users could sign up and add their
+					own dishes to their accounts, with the intention of trading them with others. People would
+					be able to match with each other's dishes, contact one another, and discuss the
+					possibility of an in-person dish exchange. I worked on this project for only a few weeks,
+					and since it was my first time working with Node.js. Express, EJS and MongoDB, I could
+					only implement one feature, which was the original (school) assignment. The feature I
+					developed allowed users to create, add, edit, and delete their own dishes from the
+					database. I fully designed the entire concept using Figma
+				</p>
+				<a href="https://github.com/rvdegroen/dish-exchange" class="demo_desktop"
+					>Github Repository →</a
+				>
+				<a href="https://github.com/rvdegroen/dish-exchange" class="demo_phone"
+					>Github Repository →</a
+				>
+			</div>
+
+			<!-- classes:"img_full, img_half" -->
+			<div class="image_grid">
+				<img class="grid_image" src="./assets/images/dish/dish1.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish2.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish3.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish4.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish5.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish6.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish7.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish8.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish9.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish10.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish11.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish12.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish13.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish14.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish15.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish16.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish17.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish18.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish19.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish20.png" alt="" />
+				<img class="grid_image" src="./assets/images/dish/dish21.png" alt="" />
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer_div">
+				<img src="./assets/images/logo.svg" alt="Roshnie's logo" class="logo" />
+
+				<table class="phonehidden">
+					<tr>
+						<td><img src="./assets/icons/mail.svg" alt="mail icon" /></td>
+						<td class="contact_text">
+							<a href="mailto:rvdegroen@gmail.com">rvdegroen@gmail.com →</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./assets/icons/github.svg" alt="github icon" /></td>
+						<td class="contact_text"><a href="https://github.com/rvdegroen">@rvdegroen →</a></td>
+					</tr>
+				</table>
+			</div>
+			<p>© 2023 Roshnie de Groen</p>
+		</footer>
+
+		<script src="./assets/scripts/main.js"></script>
+	</body>
+</html>
