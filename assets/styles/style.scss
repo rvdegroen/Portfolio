@@ -574,6 +574,46 @@ footer {
 			margin-bottom: 2em;
 			max-width: 35vw;
 		}
+
+		.demo_phone {
+			display: none;
+		}
+
+		.demo_desktop {
+			margin-bottom: 2em;
+			font-weight: 700;
+			color: var(--link-color);
+			text-decoration: none;
+			transition: ease-in-out 0.2s;
+			// padding-bottom: 0.1em;
+			// border-bottom: 2px var(--text) solid;
+			position: relative;
+
+			&::after {
+				background-color: var(--link-color);
+				transition: all 0.2s ease-in-out;
+				content: '';
+				display: block;
+				position: absolute;
+				width: 0;
+				bottom: 0;
+				right: 0;
+				height: 0.14em;
+				margin: -0.4em 0;
+				border-radius: 25px;
+			}
+
+			&:hover {
+				color: var(--text-highlight);
+				transition: all 0.2s ease-in-out;
+			}
+
+			&:hover::after {
+				background-color: var(--text-highlight);
+				left: 0;
+				width: 100%;
+			}
+		}
 	}
 
 	.image_grid {
@@ -690,7 +730,7 @@ footer {
 
 	.work_main {
 		p {
-			max-width: 90vw !important;
+			max-width: 50vw !important;
 		}
 
 		img {
@@ -711,6 +751,12 @@ footer {
 	header {
 		h1 {
 			padding-right: 6vw !important;
+		}
+	}
+
+	.work_main {
+		p {
+			max-width: 67vw !important;
 		}
 	}
 }
@@ -863,6 +909,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+	.work_main {
+		p {
+			max-width: 90vw !important;
+		}
+	}
+
 	nav {
 		position: relative;
 
