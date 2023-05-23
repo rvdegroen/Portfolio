@@ -2,6 +2,11 @@
 const checkbox = document.getElementById('darkmode');
 const body = document.body;
 
+// dialog
+const gridImages = document.querySelectorAll('.grid_image');
+const dialog = document.getElementById('dialog');
+const dialogImage = document.getElementById('dialog_image');
+
 // DEFAULT MODES
 body.classList.add('lightmode');
 
@@ -17,15 +22,36 @@ function goBack() {
 
 // EVENTLISTENERS
 // to click on the images
-window.addEventListener('load', function () {
-	const images = document.getElementsByClassName('grid_image');
+// Function to open the dialog and show the clicked image
+function openDialog(imageSrc) {
+	dialogImage.src = imageSrc;
+	dialog.style.display = 'block';
+}
 
-	for (let i = 0; i < images.length; i++) {
-		images[i].addEventListener('click', openImageInNewTab);
+// Function to close the dialog
+function closeDialog() {
+	dialog.style.display = 'none';
+}
+
+// attach click event listeners to the grid images
+gridImages.forEach((image) => {
+	image.addEventListener('click', function () {
+		const src = this.getAttribute('src');
+		openDialog(src);
+	});
+});
+
+// attach click event listener to the dialog to close it when clicked outside
+dialog.addEventListener('click', function (event) {
+	if (event.target === this) {
+		closeDialog();
 	}
+});
 
-	function openImageInNewTab() {
-		window.open(this.src, '_blank');
+// attach esc event listener to the document
+document.addEventListener('keydown', function (event) {
+	if (event.key === 'Escape') {
+		closeDialog();
 	}
 });
 
