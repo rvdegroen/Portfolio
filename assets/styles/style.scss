@@ -557,7 +557,7 @@ footer {
 	background-color: var(--background-color);
 	margin-left: 2em;
 	margin-right: 2em;
-	margin-bottom: 100px;
+	margin-bottom: 10em;
 	margin-top: 70px;
 
 	.metadata {
@@ -709,7 +709,7 @@ footer {
 	}
 
 	.work_main {
-		margin: 2em;
+		margin: 2em 2em 100px 2em;
 	}
 }
 
@@ -757,6 +757,28 @@ footer {
 	.work_main {
 		p {
 			max-width: 67vw !important;
+		}
+
+		.demo_desktop {
+			display: none !important;
+		}
+
+		.demo_phone {
+			display: block !important;
+			margin-bottom: 2em;
+			text-decoration: none;
+			transition: ease-in-out 0.2s;
+			background-color: var(--text);
+			padding: 0.7em 1em;
+			border-radius: 0.3em;
+			color: var(--button-color) !important;
+			font-weight: 400 !important;
+			line-height: 1em;
+
+			&:hover {
+				background-color: var(--button-color);
+				color: var(--text) !important;
+			}
 		}
 	}
 }
