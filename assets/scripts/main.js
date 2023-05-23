@@ -16,6 +16,19 @@ function goBack() {
 }
 
 // EVENTLISTENERS
+// to click on the images
+window.addEventListener('load', function () {
+	const images = document.getElementsByClassName('grid_image');
+
+	for (let i = 0; i < images.length; i++) {
+		images[i].addEventListener('click', openImageInNewTab);
+	}
+
+	function openImageInNewTab() {
+		window.open(this.src, '_blank');
+	}
+});
+
 // go back
 window.addEventListener('beforeunload', function () {
 	sessionStorage.setItem('scrollPosition', window.pageYOffset);

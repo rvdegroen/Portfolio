@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Roshnie's Portfolio</title>
+	</head>
+	<body>
+		<nav class="fade-in">
+			<div class="logo">
+				<img src="./assets/images/logo.svg" alt="Roshnie's logo" />
+			</div>
+			<div class="nav__links">
+				<a href="./index.html#about">About</a>
+				<a href="./index.html#portfolio">Portfolio</a>
+				<a href="./index.html#my-skills">My Skills</a>
+				<a href="./index.html#contact">Contact</a>
+			</div>
+			<input type="checkbox" id="darkmode" />
+		</nav>
+
+		<a href="#" class="arrow_up"><img src="./assets/icons/arrow-up.svg" alt="go back up" /></a>
+
+		<main class="work_main">
+			<button onclick="goBack()" class="back_button">← Go Back</button>
+			<div class="metadata">
+				<h1>Chinchilla Fighter</h1>
+				<p>
+					For this assignment, I began by researching the style that the City Government of
+					Rotterdam was implementing on their website. I started with a mobile-first approach and
+					then proceeded to desktop. I used Figma and Illustrator for the project. I also made
+					seperate notes on how to design it, but I'm not showing that here.
+				</p>
+				<a href="https://rvdegroen.github.io/Chinchilla-fighter/" class="demo_desktop"
+					>Live Demo →</a
+				>
+				<a href="https://rvdegroen.github.io/Chinchilla-fighter/" class="demo_phone">Live Demo →</a>
+			</div>
+
+			<!-- classes:"img_full, img_half" -->
+			<div class="image_grid">
+				<img class="grid_image" src="./assets/images/plog/plog1.png" alt="mobile page" />
+				<img class="grid_image" src="./assets/images/plog/plog2.png" alt="Ipad page" />
+				<img class="grid_image" src="./assets/images/plog/plog3.png" alt="Desktop page" />
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer_div">
+				<img src="./assets/images/logo.svg" alt="Roshnie's logo" class="logo" />
+
+				<table class="phonehidden">
+					<tr>
+						<td><img src="./assets/icons/mail.svg" alt="mail icon" /></td>
+						<td class="contact_text">
+							<a href="mailto:rvdegroen@gmail.com">rvdegroen@gmail.com →</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./assets/icons/github.svg" alt="github icon" /></td>
+						<td class="contact_text"><a href="https://github.com/rvdegroen">@rvdegroen →</a></td>
+					</tr>
+				</table>
+			</div>
+			<p>© 2023 Roshnie de Groen</p>
+		</footer>
+
+		<script src="./assets/scripts/main.js"></script>
+	</body>
+</html>
