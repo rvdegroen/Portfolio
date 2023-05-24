@@ -512,6 +512,8 @@ footer {
 	}
 
 	.footer_div {
+		max-width: 50em;
+		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		// max-width: 30vw;
