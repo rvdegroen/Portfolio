@@ -681,17 +681,18 @@ footer {
 
 // arrow up
 .arrow_up {
-	text-align: center;
-	background-color: var(--text-highlight);
-	display: grid;
-	place-content: center;
-	place-items: center;
-	width: 3.5em;
-	height: 3.5em;
-	border-radius: 2em;
-	position: fixed;
-	bottom: 5em;
-	right: 1em;
+	display: none;
+	// text-align: center;
+	// background-color: var(--text-highlight);
+	// display: grid;
+	// place-content: center;
+	// place-items: center;
+	// width: 3.5em;
+	// height: 3.5em;
+	// border-radius: 2em;
+	// position: fixed;
+	// bottom: 5em;
+	// right: 1em;
 }
 
 .dialog {
