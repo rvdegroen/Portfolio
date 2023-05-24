@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Roshnie's Portfolio</title>
+	</head>
+	<body>
+		<nav class="fade-in">
+			<div class="logo">
+				<img src="./assets/images/logo.svg" alt="Roshnie's logo" />
+			</div>
+			<div class="nav__links">
+				<a href="./index.html#about">About</a>
+				<a href="./index.html#portfolio">Portfolio</a>
+				<a href="./index.html#my-skills">My Skills</a>
+				<a href="./index.html#contact">Contact</a>
+			</div>
+			<input type="checkbox" id="darkmode" />
+		</nav>
+
+		<a href="#" class="arrow_up"><img src="./assets/icons/arrow-up.svg" alt="go back up" /></a>
+
+		<main class="work_main">
+			<button onclick="goBack()" class="back_button">← Go Back</button>
+			<div class="metadata">
+				<h1>Vanilla Cone Logo</h1>
+				<p>
+					I was taking a course to practice Adobe programs. As part of the Illustrator course, I had
+					to create a logo for a fictional ice cream café. This is the result.
+				</p>
+			</div>
+
+			<!-- classes:"img_full, img_half" -->
+			<div class="image_grid">
+				<img
+					class="grid_image"
+					src="./assets/images/icecreamlogo/roshnie ijssalon logo.png"
+					alt="ice cream logo"
+				/>
+			</div>
+
+			<div id="dialog" class="dialog">
+				<img id="dialog_image" src="" alt="Dialog Image" />
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer_div">
+				<img src="./assets/images/logo.svg" alt="Roshnie's logo" class="logo" />
+
+				<table class="phonehidden">
+					<tr>
+						<td><img src="./assets/icons/mail.svg" alt="mail icon" /></td>
+						<td class="contact_text">
+							<a href="mailto:rvdegroen@gmail.com">rvdegroen@gmail.com →</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./assets/icons/github.svg" alt="github icon" /></td>
+						<td class="contact_text"><a href="https://github.com/rvdegroen">@rvdegroen →</a></td>
+					</tr>
+				</table>
+			</div>
+			<p>© 2023 Roshnie de Groen</p>
+		</footer>
+
+		<script src="./assets/scripts/main.js"></script>
+	</body>
+</html>
