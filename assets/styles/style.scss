@@ -408,7 +408,7 @@ main {
 	font-size: 1.1em;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 75px;
+	margin-bottom: 18px;
 
 	h2 {
 		padding: 50px;
@@ -417,6 +417,7 @@ main {
 
 	// skills with h3 and ul
 	.skills {
+		max-width: 35em;
 		h3 {
 			margin-bottom: 0.4em;
 		}
@@ -425,6 +426,7 @@ main {
 			display: flex;
 			gap: 0.5em;
 			margin-bottom: 2em;
+			flex-wrap: wrap;
 
 			li {
 				background-color: var(--skills-color);
@@ -441,8 +443,12 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 100px;
+	padding-bottom: 200px;
 	gap: 1em;
+
+	h2 {
+		margin-bottom: 34px;
+	}
 
 	a {
 		font-weight: 700;
