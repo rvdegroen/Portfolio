@@ -423,12 +423,12 @@ main {
 
 		ul {
 			display: flex;
-			gap: 1em;
+			gap: 0.5em;
 			margin-bottom: 2em;
 
 			li {
 				background-color: var(--skills-color);
-				padding: 0.5em 1em;
+				padding: 0.5em 0.7em;
 				border-radius: 2em;
 			}
 		}
