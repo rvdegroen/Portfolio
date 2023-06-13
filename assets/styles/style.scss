@@ -333,6 +333,7 @@ main {
 				transition: ease-in-out 0.2s;
 				// padding-bottom: 0.1em;
 				// border-bottom: 2px var(--text) solid;
+				width: fit-content;
 				position: relative;
 
 				&::after {
