@@ -941,7 +941,7 @@ footer {
 			}
 
 			p {
-				max-width: 90% !important;
+				max-width: 30em !important;
 				margin: 0 auto;
 			}
 
@@ -959,8 +959,8 @@ footer {
 				}
 
 				&:hover {
-					background-color: var(--button-color);
-					color: var(--text) !important;
+					background-color: var(--hover-bg);
+					color: var(--hover-text) !important;
 				}
 
 				&:hover::after {
