@@ -738,10 +738,11 @@ footer {
 // 	}
 // }
 
-@media (max-width: 1684px) {
+@media (max-width: 1900px) {
 	#portfolio {
 		.work {
-			padding: 2em 0 !important;
+			// padding: 2em 0 !important;
+			padding: 2.5em 10em !important;
 
 			div:first-of-type {
 				margin-left: 10em;
@@ -757,7 +758,23 @@ footer {
 	}
 }
 
+@media (max-width: 1733px) {
+	#portfolio {
+		.work {
+			// padding: 2em 0 !important;
+			padding: 2.5em 2em !important;
+		}
+	}
+}
+
 @media (max-width: 1446px) {
+	#portfolio {
+		.work {
+			// padding: 2em 0 !important;
+			padding: 2.5em 0em !important;
+		}
+	}
+
 	header {
 		h1 {
 			padding-right: 22vw !important;
