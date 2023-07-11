@@ -847,28 +847,6 @@ footer {
 		p {
 			max-width: 67vw !important;
 		}
-
-		.demo_desktop {
-			display: none !important;
-		}
-
-		.demo_phone {
-			display: block !important;
-			margin-bottom: 2em;
-			text-decoration: none;
-			transition: ease-in-out 0.2s;
-			background-color: var(--text);
-			padding: 0.7em 1em;
-			border-radius: 0.3em;
-			color: var(--button-color) !important;
-			font-weight: 400 !important;
-			line-height: 1em;
-
-			&:hover {
-				background-color: var(--button-color);
-				color: var(--text) !important;
-			}
-		}
 	}
 }
 
@@ -1032,9 +1010,35 @@ footer {
 			flex-direction: column;
 		}
 	}
+
+	.demo_desktop {
+		display: none !important;
+	}
+
+	.demo_phone {
+		display: block !important;
+		margin-bottom: 2em;
+		text-decoration: none;
+		transition: ease-in-out 0.2s;
+		background-color: var(--text);
+		padding: 0.7em 1em;
+		border-radius: 0.3em;
+		color: var(--button-color) !important;
+		font-weight: 400 !important;
+		line-height: 1em;
+
+		&:hover {
+			background-color: var(--hover-bg);
+			color: var(--hover-text) !important;
+		}
+	}
 }
 
 @media (max-width: 768px) {
+	#portfolio .work p {
+		margin: 0 20px;
+	}
+
 	.work_main {
 		p {
 			max-width: 90vw !important;
@@ -1069,6 +1073,10 @@ footer {
 }
 
 @media (max-width: 452px) {
+	#portfolio .work p {
+		margin: 0 10px;
+	}
+
 	.back_button {
 		right: 30vw;
 	}
