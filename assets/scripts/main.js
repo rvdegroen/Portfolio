@@ -91,8 +91,10 @@ checkbox.addEventListener('change', function () {
 });
 
 // attach click event listener to the dialog to close it when clicked outside
-dialog.addEventListener('click', function (event) {
-	if (event.target === this) {
-		closeDialog();
-	}
-});
+if (dialog) {
+	dialog.addEventListener('click', function (event) {
+		if (event.target === this) {
+			closeDialog();
+		}
+	});
+}
