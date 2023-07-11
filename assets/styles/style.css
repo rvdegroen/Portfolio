@@ -900,7 +900,8 @@ footer a:hover::after {
     max-width: 90vw !important;
   }
   .back_button {
-    right: 37vw;
+    width: -moz-max-content;
+    width: max-content;
   }
   nav {
     position: relative;
