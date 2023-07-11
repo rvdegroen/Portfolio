@@ -79,14 +79,30 @@ window.addEventListener('hashchange', function () {
 // 	}
 // });
 
-// darkmode and lightmode
+// retrieve the user's preference from localStorage (if available)
+var isDarkMode = localStorage.getItem('darkMode');
+
+// check if the preference exists and apply the appropriate styling
+if (isDarkMode === 'true') {
+	checkbox.checked = true;
+	body.classList.add('darkmode');
+	body.classList.remove('lightmode');
+} else {
+	checkbox.checked = false;
+	body.classList.remove('darkmode');
+	body.classList.add('lightmode');
+}
+
+// listen for changes in the checkbox and update the preference accordingly
 checkbox.addEventListener('change', function () {
 	if (this.checked) {
 		body.classList.add('darkmode');
 		body.classList.remove('lightmode');
+		localStorage.setItem('darkMode', 'true'); // Save the preference
 	} else {
 		body.classList.remove('darkmode');
 		body.classList.add('lightmode');
+		localStorage.setItem('darkMode', 'false'); // Save the preference
 	}
 });
 
